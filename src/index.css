@@ -11,3 +11,101 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* reuseable */
+:root{
+  --bg-nav-color:#f6f6f9b5;
+}
+li{
+  position: relative;
+  list-style: none;
+}
+ul li a{
+  text-decoration: none;
+  color: black;
+}
+nav,nav ul,.section-hero{
+  display: flex;
+  align-items: center;
+}
+.sub-title{
+  font-size: 1.2rem;
+  color: grey;
+}
+.special
+{
+  color: blue;
+}
+button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: rgb(18, 45, 225);
+  border: none;
+}
+
+nav{
+  background-color: var(--bg-nav-color);
+  justify-content: space-between;
+  font-size: 1.2rem;
+  padding: 2px 1rem;
+}
+nav ul{
+  justify-content: space-around;
+  gap: 2rem;
+  font-weight: 500;
+  margin-top: 5px;
+}
+li::before{
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width:  0%;
+  height: 2px;
+  background-color: rgb(67, 33, 237);
+  border-radius: 5px;
+  transition: all .3s linear;
+}
+li:hover::before{
+  width: 100%;
+}
+li:hover{
+  color: rgb(26, 19, 255);
+  cursor: pointer;
+}
+div #title{
+  font-size: 1.7rem;
+  color: rgb(2, 2, 42);
+  font-weight: 700;
+  position: relative;
+}
+.section-hero{
+  margin-top: 3rem;
+  justify-content: space-evenly;
+}
+.section-hero .hero-img{
+  width: 500px;
+  animation: float 5s ease-in infinite;
+}
+#card{
+  width: 19.5rem;
+}
+@keyframes float {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(15px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+@media (max-width:1020px) {
+  .section-hero{
+    flex-wrap: wrap-reverse;
+  }
+    .section-hero .hero-img{
+      margin: 1rem;
+    }
+}
