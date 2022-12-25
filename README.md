@@ -3,7 +3,7 @@
 
 Naveen Gaonkar
 ## Link Of Website
-https://gaonkarbhai.github.io/
+http://gaonkarBhai.github.io/React.js-website
 ## 🚀 About Me
 I'm a full stack developer...
 
