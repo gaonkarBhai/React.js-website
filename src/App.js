@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import Home from "./Home";
 import Navbar from "./Navbar";
 import About from "./About";
+import Footer from "./Footer";
 
 function App() {
   // Routing
@@ -21,6 +22,7 @@ function App() {
         <Route path="/services" element={ <Services/> }/>
         <Route path="/about" element={ <About/> }/>
       </Routes>
+      <Footer/>
     </React.Fragment>
   );
 }

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const Comman = (props) => {
     return (
-        <section className='section-hero'>
+        <section className='section-hero mb-5'>
             <div>
                 <h1>{props.title1}<span className='special'>{props.title2}</span> {props.title3} <br /></h1>
                 <p className='sub-title'>{props.para}</p>
